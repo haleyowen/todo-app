@@ -91,8 +91,6 @@ var AuthControls = class extends React.Component {
    }
 
    handleEmailPassLogin() {
-     console.log(this.state.email);
-     console.log(this.state.pass);
      const credential = new UserPasswordCredential(this.state.email, this.state.pass);
      this.client.auth.loginWithCredential(credential).then(authedId => {
        location.reload();
@@ -125,13 +123,13 @@ render() {
          ? <div className="login-links-panel">
             <h2>TODO</h2>
             <div>
-              <label>
+              <label className="userpass-input-label">
                 Username:
-                <input type="text" name="username" value={this.state.email} onChange={this.handleUsernameChange} /> 
+                <input className="userpass-input-text" type="text" name="username" value={this.state.email} onChange={this.handleUsernameChange} /> 
               </label>
-              <label>
-                Password
-                <input type="password" name="password" value={this.state.pass} onChange={this.handlePass} onChange={this.handlePassChange}/> 
+              <label className="userpass-input-label">
+                Password:
+                <input className="userpass-input-text" type="password" name="password" value={this.state.pass} onChange={this.handlePass} onChange={this.handlePassChange}/> 
               </label>
               <button
                 className="signin-button"

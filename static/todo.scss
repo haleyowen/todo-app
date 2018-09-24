@@ -143,3 +143,18 @@ input[type='checkbox']:checked {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAMAAABhTZc9AAAAM1BMVEU7V53////7/P33+Pvm6vPe4++erM9HYaPs7/bY3uu8xd6uutiXpstfd7BNZ6dGYKM+Wp8D8PpVAAAAS0lEQVQoz2MYIoCfh5OZkZkFuyQvCyMYYJVk52DEI8vGiE+WFSjBzY7LTUxAWT6cLgYbSnVZRiTAJIBPlhWvXi68smz4XTUqS6IsADRcAScdHoCmAAAAAElFTkSuQmCC);
   background-size:18px 18px;
 }
+
+.userpass-input {
+  &-label {
+    margin-right: 20px;
+  }
+
+  &-text {
+    margin-left: 8px;
+    height: 20px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+  }
+}
